@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Students>
+
+  <Student>
+    <FirstName>Poting</FirstName>
+    <LastName>Chiang</LastName>
+    <Average>98</Average>
+    <PhoneNumber>780-716-3985</PhoneNumber>
+  </Student>
+    <Student>
+    <FirstName>Daniel</FirstName>
+    <LastName>Robinson</LastName>
+    <Average>78</Average>
+    <PhoneNumber>780-916-7878</PhoneNumber>
+  </Student>
+    <Student>
+    <FirstName>Madison</FirstName>
+    <LastName>Like</LastName>
+    <Average>96</Average>
+    <PhoneNumber></PhoneNumber>
+  </Student>
+
+</Students>
