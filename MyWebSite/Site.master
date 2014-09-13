@@ -49,12 +49,33 @@
                     <a class="navbar-brand" runat="server" href="~/">Poting Chiang</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+
+
+                    <%--<ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a runat="server" href="~/XMLFiles/XMLDemo">Contact</a></li>
-                    </ul>
+                        <li><a runat="server" href="~/XMLFiles/MyXMLDemo">Contact</a></li>
+                    </ul>--%>
+
+                    <asp:Menu ID="Menu1" runat="server"
+                        DataSourceID="SiteMapDataSourceRepoDemo" CssClass="" 
+                        Orientation="Horizontal" StaticDisplayLevels="1" 
+                        IncludeStyleBlock="false" StaticMenuStyle-CssClass="nav navbar-nav"
+                        StaticSelectdStyle-CssClass="active" DynamicMenuStyle-CssClass="dropdown-menu"
+                        EnableViewState="false" EnableTheming="false" >
+                    </asp:Menu>
+
+                    <script>
+                        /* Remove float styling that was injected for the menu control*/
+                        $(function () {
+                            // Isolate the context for applying Bootstrap styling
+                            $('Menu1').next().removeAttr('style');
+                        });
+                    </script>
+
+                    <asp:SiteMapDataSource ID="SiteMapDataSourceRepoDemo" runat="server" ShowStartingNode="false" />
+
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
