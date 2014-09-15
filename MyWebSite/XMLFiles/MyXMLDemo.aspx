@@ -2,6 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
 
+    <br />
+    <h2>Student Information</h2>
+    <br />
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="XmlDataSource1">
         <Columns>
             <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />

@@ -50,12 +50,11 @@
                 </div>
                 <div class="navbar-collapse collapse">
 
-
                     <%--<ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a runat="server" href="~/XMLFiles/MyXMLDemo">Contact</a></li>
+                        <li><a runat="server" href="~/XML_Files/XML_Page">XML Class Demo</a></li>
                     </ul>--%>
 
                     <asp:Menu ID="Menu1" runat="server"
@@ -70,7 +69,7 @@
                         /* Remove float styling that was injected for the menu control*/
                         $(function () {
                             // Isolate the context for applying Bootstrap styling
-                            $('Menu1').next().removeAttr('style');
+                            $('#Menu1').next().removeAttr('style');
                         });
                     </script>
 

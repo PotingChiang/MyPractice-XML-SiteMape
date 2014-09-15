@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
     <siteMapNode  title="DemoMenu"  description="This is the root of the sitemap(Do Not Display).">
       
       <siteMapNode url="~/Default.aspx" title="Home"  description="Home page." />
-      <siteMapNode url="~/About.aspx" title="About"  description="About the w=application." />
+      <siteMapNode url="~/About.aspx" title="About"  description="About the application." />
       <siteMapNode url="~/Contact.aspx" title="Contact"  description="My Contact" />
       <siteMapNode url="~/XMLFiles/MyXMLDemo.aspx" title="MyXMLDemo"  description="My first XML Demo." />
 
@@ -15,8 +16,14 @@
       <siteMapNode title="Services" description="The root menu of Services.">
         <siteMapNode url="~/SiteMapPages/Training.aspx" title="Training" description="Training page." />
         <siteMapNode url="~/SiteMapPages/Consulting.aspx" title="Consulting" description="Consulting page." />
-        <siteMapNode url="~/SiteMapPages/Support.aspx" title="Support" description="Support page." />
+        <siteMapNode url="~/SiteMapPages/Support/Support.aspx" title="Support" description="Support page.">
+          <siteMapNode url="~/SiteMapPages/Support/SupportTickets.aspx" title="Support Tickets" description="Support Tickets page." />
+        </siteMapNode>
+        <siteMapNode url="~/SiteMapPages/MemberServices/MemberSrevices.aspx" title="Member Srevices" description="Member Srevices page.">
+          <siteMapNode url="~/SiteMapPages/MemberServices/Downloads.aspx" title="Downloads" description="Downloads page." />
+          <siteMapNode url="~/SiteMapPages/MemberServices/RegisteredProducts.aspx" title="Registered Products" description="Registered Products page." />
+        </siteMapNode>
       </siteMapNode>
-            
+      
     </siteMapNode>
 </siteMap>
