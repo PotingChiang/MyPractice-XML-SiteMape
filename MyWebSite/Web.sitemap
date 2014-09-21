@@ -24,6 +24,8 @@
           <siteMapNode url="~/SiteMapPages/MemberServices/RegisteredProducts.aspx" title="Registered Products" description="Registered Products page." />
         </siteMapNode>
       </siteMapNode>
-      
+      <siteMapNode title="eRestaurant" description="eRestaurant Demo Page">
+        <siteMapNode url="~/SiteMapPages/eRestaurant/SpecialEvents.aspx" title="Specil Events" description="Special Events Demo Page"/>
+      </siteMapNode>
     </siteMapNode>
 </siteMap>
