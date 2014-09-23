@@ -16,5 +16,8 @@ namespace eRestaurantSystem.DAL
         public eRestaurantContext():base("name=EatIn") {}
 
         public DbSet<SpecialEvent> SpecialEvents { get; set; }
+
+        public DbSet<Reservation> Reservations { get; set; }
     }
+
 }

@@ -21,5 +21,13 @@ namespace eRestaurantSystem.BLL
                 return SpecialEventcontext.SpecialEvents.ToList();
             }
         }
+
+        public List<Reservation> ReservationList()
+        {
+            using (eRestaurantContext ReservationContext = new eRestaurantContext())
+            {
+                return ReservationContext.Reservations.ToList();
+            }
+        }
     }
 }

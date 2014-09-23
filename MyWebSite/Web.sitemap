@@ -26,6 +26,7 @@
       </siteMapNode>
       <siteMapNode title="eRestaurant" description="eRestaurant Demo Page">
         <siteMapNode url="~/SiteMapPages/eRestaurant/SpecialEvents.aspx" title="Specil Events" description="Special Events Demo Page"/>
+        <siteMapNode url="~/SiteMapPages/eRestaurant/Reservations.aspx" title="Reservations" description="Reservation Page Demo" />
       </siteMapNode>
     </siteMapNode>
 </siteMap>
