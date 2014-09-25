@@ -29,5 +29,13 @@ namespace eRestaurantSystem.BLL
                 return ReservationContext.Reservations.ToList();
             }
         }
+
+        public List<Reservation> ReservationByEvent(string eventCode)
+        {
+            using (eRestaurantContext context = new eRestaurantContext())
+            {
+                return context.Reservations.Where(anItem => anItem.eventCode == eventCode).ToList();
+            }
+        }
     }
 }
